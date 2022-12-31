@@ -85,12 +85,17 @@ body {
     background-color: #deebff;
   }
   
-  #icon-info1{
+  #icon-info1,#icon-info2{
     background-color:#ffffff;
     color: #3c89fd;
     border:0.1em solid #e0e0e0;
     border-radius: 50%;
+  }
+  #icon-info1{
     padding: 0.5em 1em 0.5em 1em;
+  }
+  #icon-info2{
+    padding: 0em 0.5em 0em 0.5em;
   }
   #div-logment-dispo{
     color: #696969;
@@ -263,7 +268,7 @@ body {
         border-top: 0.2em solid #0065FC;
         color: #0065FC;
     }
-    #rech-loop{
+    #rech-loop,#icon-info2{
       display: none;
     }
     #div-les-plus-popul{
@@ -296,7 +301,7 @@ body {
       border-bottom: 0.2em solid #0065FC;
       color: #0065FC;
     }
-    #rech-txt{
+    #rech-txt,#icon-info1{
       display: none;
     }
     #nav-filtres{
@@ -321,7 +326,6 @@ body {
     .div-heberg_marseille-cards{
       flex-direction: column;
       gap: 1em;
-      margin-top: 0.5em;
     }
     .a-card-marseille{
         width: 98%;
