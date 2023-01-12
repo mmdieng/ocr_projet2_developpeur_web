@@ -32,7 +32,6 @@ body {
     margin-bottom: 0.3em;
 }
 #small-article{
-    color: #696969;
     margin: 0;
 }
 #form-rechercher{
@@ -58,6 +57,7 @@ body {
 #nav-filtres{
   display: flex;
   margin: 1em 0em 1em 0em;
+  font-weight: bold;
 }
 #div-filtre{
   padding-top: 0.5em;
@@ -97,8 +97,7 @@ body {
 #icon-info2{
   padding: 0em 0.5em 0em 0.5em;
 }
-#div-logment-dispo{
-  color: #696969;
+#tab-logment-dispo{
   font-size: 80%;
   padding-bottom:2em;
 }
@@ -144,12 +143,15 @@ body {
 .div-container-card-marseille p,h5{
   margin: 0;
 }
+.small-euro{
+  font-weight: bold;
+}
 #div-aff-plus{
   margin: 1em 0em 1em 0em;
   font-weight: bold;
 }
 .ecrit-claire{
-  color: #696969;
+  color: #222020;
 }
 .etoiles-bleu{
   color: #0065FC;
@@ -168,7 +170,7 @@ body {
   justify-content: space-between;
   margin-bottom: 1em;
 }
-#div-les-plus-pop-in h3{
+#div-les-plus-pop-in h2{
   margin: 0;
 }
 #div-les-plus-popul-cards{
@@ -199,7 +201,7 @@ body {
 .div-container-card-les-plus-popul{
   width: 70%;
 }
-.div-container-card-les-plus-popul p,h5{
+.div-container-card-les-plus-popul p,h3{
   margin: 0;
 }
 .div-card{
@@ -280,7 +282,11 @@ footer nav{
   #div-les-plus-popul-cards{
     flex-direction: row;
   }
+  .div-container-card-act-marseil{
+    height: 2em;
+  }
 }
+
 @media screen and (max-width:768px) {
   body{
     padding: 0px;
@@ -310,9 +316,8 @@ footer nav{
   }
   .li-icons a{
     display: block;
-  }
-  #div-logment-dispo{
-    display: flex;
+    padding: 1em;
+    border-radius:10em ;
   }
   #div-hotels{
     flex-direction: column-reverse;
@@ -329,13 +334,21 @@ footer nav{
       width: 98%;
     box-shadow: 0em 0em 0.5em #c0c4c7;
   }
+
+  .container-img-card-marseille{
+    height: 6em;
+  }
+  .img-card-marseille{
+    height: 6em;
+  }
+
   #div-aff-plus{
     display: none;
   }
   #div-les-plus-popul-cards{
     flex-direction: column;
   }
-  #h2-act-marseil{
+  #h1-act-marseil{
     width: 50%;
     margin-left: 0.9em;
     margin-bottom: 0.1em;
@@ -354,11 +367,43 @@ footer nav{
   .container-img-activite-marseil{
     height: 10em;
   }
+  
+  .div-container-card-act-marseil{
+    height: 1em;
+  }
   footer{
     flex-direction: column;
     padding: 0em 0em 0em 1em;
+    font-size: 5vw;
   }
   .uls-footer{
     padding: 0em;
+  }
+
+  #small-article{
+    font-size: 6vw;
+  }
+  #site-rechercher,#icon-position1,#bt-rechercher{
+    font-size: 6vw;
+  }
+  #tab-logment-dispo{
+    font-size: 5vw;
+  }
+  #id-header{
+    font-size: 5vw;
+  }
+  
+  h1{
+    font-size: 7vw;
+  }
+  
+  #nav-filtres{
+    font-size: 3.5vw;
+  }
+  #div-hotels{
+    font-size: 4vw;
+  }
+  #div-row-activite-marseil{
+    font-size: 4vw;
   }
 }
